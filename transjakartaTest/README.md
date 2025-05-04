@@ -1,12 +1,12 @@
-# React + Vite
+Cara Menjalankan Aplikasi:
+1. User membuka page → fetch data Vehicles, Routes, Trips
+2. User pilih dropdown → selectedRoute/selectedTrip berubah
+3. Vehicles difilter sesuai dropdown
+4. Hasil filter → ditampilkan dengan pagination
+5. Klik button view detail di salah satu vehicle untuk melihat tampilan informasi detail dari vehicle → menampilkan modal popup detail
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Arsitektur Tech Stack:
+- React JS
+- React Router DOM (Route Navigate)
+- Axios (Fetch Data)
+- Tailwind (CSS)
