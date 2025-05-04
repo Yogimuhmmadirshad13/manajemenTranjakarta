@@ -3,7 +3,7 @@ import Bus from '../assets/Bus.png'
 import { Gps } from 'iconsax-reactjs'
 import { Link } from 'react-router-dom'
 
-export default function CardItem({ vehicle }) {
+export default function CardItem({ vehicle, onViewDetail }) {
     return (
         <>
             <div className="bg-white rounded-lg border border-gray-200 shadow-md">
@@ -30,9 +30,11 @@ export default function CardItem({ vehicle }) {
                         </div>
                     </div>
 
-                    <Link to={`/vehicle/${vehicle.id}`}>
-                        <button className='border-[1.5px] border-blue-700 text-blue-700 w-full p-2 my-2 rounded-full cursor-pointer'>View Detail</button>
-                    </Link>
+                    {/* <Link to={`/vehicle/${vehicle.id}`}> */}
+                    <button
+                        onClick={onViewDetail}
+                        className='border-[1.5px] border-blue-700 text-blue-700 w-full p-2 my-2 rounded-full cursor-pointer'>View Detail</button>
+                    {/* </Link> */}
                 </div>
             </div>
         </>
