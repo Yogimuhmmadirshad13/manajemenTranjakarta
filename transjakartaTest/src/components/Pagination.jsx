@@ -14,7 +14,7 @@ export default function Pagination({ totalPosts, postsPerPage, setCurrentPage, c
                     return <button
                         key={index}
                         onClick={() => setCurrentPage(page)}
-                        className={page == currentPage ? 'active bg-blue-700 text-white' : ''}>
+                        className={page == currentPage ? 'active bg-blue-700 text-white' : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-200'}>
                         {page}</button>
                 })}
             </div>
